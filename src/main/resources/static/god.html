@@ -5,12 +5,21 @@
     <title>oh my god</title>
 </head>
 <body>
-<div>
-    <h5>Tel: 130 1901 0810</h5>
+<div style="margin-top: 300px">-</div>
+<div  id="blink" style="text-align:center; font-size: 35px;">
+    <h1>Tel: 130 1901 0810</h1>
 </div>
-<div>
-    <h5>Email: 690351848@qq.com</h5>
+<div style="text-align:center;font-size: 35px;">
+    <h1>Email: 690351848@qq.com</h1>
 </div>
 <div></div>
 </body>
+<script language="javascript">
+    function changeColor(){
+        var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+        color=color.split("|");
+        document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    setInterval("changeColor()",200);
+</script>
 </html>
